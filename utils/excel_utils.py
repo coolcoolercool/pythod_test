@@ -100,7 +100,6 @@ def read_excel_save_need(excel_file_path, sheet_name_input):
     sheet_name_new = 'sheet_new_' + now_time
     new_sheet = workbook.create_sheet(sheet_name_new)
     # 需要查询关键词合集
-    set_channel = {'拼多多', '抖音'}
     count_map = {}  # 统计每个关键词出现多少次
     count_total = 0
     data = []  # 过滤得到所有需要的数据行
@@ -109,7 +108,7 @@ def read_excel_save_need(excel_file_path, sheet_name_input):
     for row in range(1, sheet.max_row + 1):
         content = []
         # 过滤筛选
-        channel_value = sheet.cell(row, 3).value
+        channel_value = sheet.cell(row, key_word_col_num).value
         print_flag = channel_value in set_channel
         if row == 1:
             print_flag = True
@@ -227,13 +226,23 @@ class ReadExcel:
 if __name__ == "__main__":
     print("main begin\n")
     now_time = str(int(time.time()))
-    file_path = '../data_file/2020年销售数据.xlsx'
-    output_file_path = '../data_file/2020年销售数据_' + now_time + '.xlsx'
+    # 1.将文件放到data_file目录中
+
+    # 2.输入excel的文件名
+    file_name = '2020年销售数据'
+    file_path = '../data_file/' + file_name + '.xlsx'
+    output_file_path = '../data_file/+ file_name +_' + now_time + '.xlsx'
+
+    # 3.输入你要查询和过滤的sheet 名称
     sheet_name = '销售数据第一页'
 
-    # read_excel_file_by_openpyxl('../data_file/2020年销售数据.xlsx')
+    # 4.输入你想过滤和筛选的关键词集合
+    set_channel = {'拼多多', '抖音'}
+
+    # 5.输入你想过滤和筛选的关键词在哪里列
+    key_word_col_num = 3
+
     read_excel_save_need(file_path, sheet_name)
-    # openpyxl_test_function()
 
     # 直接运行本文件时执行，下面是一个应用实例
     # 需要读取excel时直接调用ReadExcel类
