@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70eea89a-e8b3-4829-99d3-bf930f98320d" name="Changes" comment="新增python sm3 工具类">
-      <change afterPath="$PROJECT_DIR$/data_file/2018年北京积分落户数据.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_file/2020年销售数据.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_file/2022年股票数据.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_file/2023年北京积分落户数据.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_file/boston_house_price.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_file/某招聘网站招聘数据.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/excel_utils.py" afterDir="false" />
+    <list default="true" id="70eea89a-e8b3-4829-99d3-bf930f98320d" name="Changes" comment="python 读取excel">
+      <change afterPath="$PROJECT_DIR$/test_request/demo_get_request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_request/test_eureka_client_server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,18 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "coolcoolercool"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;coolcoolercool&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/coolcoolercool/pythod_test.git",
-    "accountId": "710032e4-f4d6-49d8-a54a-3f36e66e881e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/coolcoolercool/pythod_test.git&quot;,
+    &quot;accountId&quot;: &quot;710032e4-f4d6-49d8-a54a-3f36e66e881e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -58,8 +53,10 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Python.TestSend.executor": "Run",
     "Python.common_utils.executor": "Run",
+    "Python.demo_get_request.executor": "Run",
     "Python.excel_utils.executor": "Run",
     "Python.print_utils.executor": "Run",
+    "Python.test_eureka_client_server.executor": "Run",
     "Python.test_send_to_spring_boot.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -80,7 +77,7 @@
       <recent name="D:\code\python_code\TestCaseProject\data_file" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.excel_utils">
+  <component name="RunManager">
     <configuration name="common_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TestCaseProject" />
       <option name="ENV_FILES" value="" />
@@ -159,6 +156,7 @@
       <workItem from="1714356030746" duration="8809000" />
       <workItem from="1714962442515" duration="8532000" />
       <workItem from="1715046308056" duration="6446000" />
+      <workItem from="1715065984252" duration="3073000" />
     </task>
     <task id="LOCAL-00001" summary="新增python sm3 工具类">
       <option name="closed" value="true" />
@@ -168,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715042214135</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="python 读取excel">
+      <option name="closed" value="true" />
+      <created>1715060613090</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715060613090</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,10 +183,13 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="新增python sm3 工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增python sm3 工具类" />
+    <MESSAGE value="python 读取excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="python 读取excel" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TestCaseProject$test_eureka_client_server.coverage" NAME="test_eureka_client_server 覆盖结果" MODIFIED="1715068151765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_request" />
     <SUITE FILE_PATH="coverage/TestCaseProject$excel_utils.coverage" NAME="excel_utils 覆盖结果" MODIFIED="1715051010387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/TestCaseProject$demo_get_request.coverage" NAME="demo_get_request 覆盖结果" MODIFIED="1715066426815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_request" />
     <SUITE FILE_PATH="coverage/TestCaseProject$test_send_to_spring_boot.coverage" NAME="test_send_to_spring_boot 覆盖结果" MODIFIED="1714359621970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_request" />
     <SUITE FILE_PATH="coverage/TestCaseProject$TestSend.coverage" NAME="TestSend 覆盖结果" MODIFIED="1714981491284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gateway_request" />
     <SUITE FILE_PATH="coverage/TestCaseProject$print_utils.coverage" NAME="print_utils 覆盖结果" MODIFIED="1714359442598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
