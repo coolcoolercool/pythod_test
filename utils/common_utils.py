@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*
 import json
 import time
 import hashlib
@@ -30,6 +31,15 @@ def encodeBySM3():
 
     # 输出加密结果
     print("SM3 Hash Value:", hash_value)
+
+
+def get_now_unix_time_str():
+    return str(int(time.time()))
+
+
+def get_now_unix_time():
+    return int(time.time())
+
 
 
 if __name__ == '__main__':

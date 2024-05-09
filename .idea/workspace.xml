@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70eea89a-e8b3-4829-99d3-bf930f98320d" name="Changes" comment="新增读取excel，根据关键词过滤筛选，按照原格式复制到新的sheet中">
-      <change beforePath="$PROJECT_DIR$/utils/excel_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/excel_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/jwt_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/login_data_mock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/redis_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +57,9 @@
     "Python.common_utils.executor": "Run",
     "Python.demo_get_request.executor": "Run",
     "Python.excel_utils.executor": "Run",
+    "Python.jwt_utils.executor": "Run",
     "Python.print_utils.executor": "Run",
+    "Python.redis_utils.executor": "Run",
     "Python.test_eureka_client_server.executor": "Run",
     "Python.test_send_to_spring_boot.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -75,7 +81,7 @@
       <recent name="D:\code\python_code\TestCaseProject\data_file" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.excel_utils">
+  <component name="RunManager" selected="Python.jwt_utils">
     <configuration name="common_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TestCaseProject" />
       <option name="ENV_FILES" value="" />
@@ -122,8 +128,56 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="jwt_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TestCaseProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/jwt_utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="redis_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TestCaseProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/redis_utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.jwt_utils" />
+        <item itemvalue="Python.redis_utils" />
         <item itemvalue="Python.excel_utils" />
         <item itemvalue="Python.common_utils" />
       </list>
@@ -154,7 +208,7 @@
       <workItem from="1714356030746" duration="8809000" />
       <workItem from="1714962442515" duration="8532000" />
       <workItem from="1715046308056" duration="6446000" />
-      <workItem from="1715065984252" duration="14084000" />
+      <workItem from="1715065984252" duration="19451000" />
     </task>
     <task id="LOCAL-00001" summary="新增python sm3 工具类">
       <option name="closed" value="true" />
@@ -188,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715150023677</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增读取excel，根据关键词过滤筛选，按照原格式复制到新的sheet中">
+      <option name="closed" value="true" />
+      <created>1715150491865</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715150491865</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,11 +266,13 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestCaseProject$test_eureka_client_server.coverage" NAME="test_eureka_client_server 覆盖结果" MODIFIED="1715068151765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_request" />
+    <SUITE FILE_PATH="coverage/TestCaseProject$redis_utils.coverage" NAME="redis_utils 覆盖结果" MODIFIED="1715241424091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/TestCaseProject$demo_get_request.coverage" NAME="demo_get_request 覆盖结果" MODIFIED="1715066426815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_request" />
-    <SUITE FILE_PATH="coverage/TestCaseProject$excel_utils.coverage" NAME="excel_utils 覆盖结果" MODIFIED="1715149936643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/TestCaseProject$excel_utils.coverage" NAME="excel_utils 覆盖结果" MODIFIED="1715150411659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/TestCaseProject$test_send_to_spring_boot.coverage" NAME="test_send_to_spring_boot 覆盖结果" MODIFIED="1714359621970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_request" />
     <SUITE FILE_PATH="coverage/TestCaseProject$TestSend.coverage" NAME="TestSend 覆盖结果" MODIFIED="1714981491284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gateway_request" />
     <SUITE FILE_PATH="coverage/TestCaseProject$print_utils.coverage" NAME="print_utils 覆盖结果" MODIFIED="1714359442598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/TestCaseProject$common_utils.coverage" NAME="common_utils 覆盖结果" MODIFIED="1714983770610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/TestCaseProject$jwt_utils.coverage" NAME="jwt_utils 覆盖结果" MODIFIED="1715242126286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
 </project>
