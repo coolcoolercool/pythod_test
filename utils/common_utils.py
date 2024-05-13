@@ -2,6 +2,7 @@
 import json
 import time
 import hashlib
+import uuid
 
 
 # 获取当前时间
@@ -40,6 +41,9 @@ def get_now_unix_time_str():
 def get_now_unix_time():
     return int(time.time())
 
+
+def get_uuid_str():
+    return str(uuid.uuid4())
 
 
 if __name__ == '__main__':

@@ -4,8 +4,7 @@ import redis
 
 def redis_insert_user_info(uuid_str):
     host = 'localhost'
-    pool = redis.ConnectionPool(host=host, port=6379, decode_responses=True)
-    r = redis.Redis(connection_pool=pool)
+    r = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
     # r.set('food', 'mutton', ex=1 * 1000 * 60 * 2)
     # print(r.get('food'))  # mutton 取出键food对应的值
 
