@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*
 import json
+import random
+import string
 import time
 import hashlib
 import uuid
@@ -44,6 +46,23 @@ def get_now_unix_time():
 
 def get_uuid_str():
     return str(uuid.uuid4())
+
+
+# 生成指定长度的随机字符串
+def get_target_str(length):
+    """
+    生成一个指定长度的随机字符串，其中
+    string.digits=0123456789
+    string.ascii_letters=abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+    """
+    str_list = [random.choice(string.digits + string.ascii_letters) for i in range(length)]
+    random_str = ''.join(str_list)
+    return random_str
+
+
+# [a,b,c] -> a,b,c
+def change_list_2_str(change_list):
+    return ', '.join(change_list)
 
 
 if __name__ == '__main__':
